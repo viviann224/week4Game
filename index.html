@@ -33,7 +33,24 @@
         <button id="button-4" class="btn btn-primary number"><img src="assets/images/button4.png" id="but4"></button>
 	</div>
 
-	<script src="assets/javascript/game.js">
+	<script src="assets/javascript/test.js">
+for(var i=0; i<4; i++)
+{
+	var random= getRandItem();
+	var crystal = $("<div>");
+	crystal.attr("class": 'crystal', "rand-data":random);
+	$(".crystal").html("button");
+	$(".crystal").append(crystal);
+}
+
+$(".crystal").on("click", function()
+{
+	console.(S(this));
+
+});
+
+
+
 	</script>
 </body>
 </html>

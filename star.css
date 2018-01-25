@@ -1,0 +1,56 @@
+.char1, .char2, .char3, .char4
+{
+	float:left;
+	background-color: red;
+	height: 120px;
+	width:100px;
+	
+
+
+}
+#bt1, #bt2, #bt3, #bt4
+{
+	height: 75px;
+	width:100px;
+
+}
+.yourchar
+{
+	height:200px;
+	background-color: orange;
+}
+
+h3
+{
+	font-size:7px;
+	color:grey;
+}
+
+button
+{
+	background-color: green;
+}
+
+.characters
+{
+	width:600px;
+	height:200px;
+	background-color:yellow;
+}
+#enemypos
+{
+	background-color: orange;
+	height:250px;
+}
+
+.attackpos
+{
+	background-color: orange;
+	height:250px;
+}
+#enemys
+{
+	color:white;
+	height:200px;
+	background-color:blue;
+}

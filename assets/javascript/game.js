@@ -68,7 +68,7 @@ function checkwin(secret, mytotal)
 		console.log("total score needs to be 0: "+mytotal);
 		$("#totalscore").html("Total Score: "+mytotal);
 		$("#wins").html("Wins: "+win);
-		$("#totalscore").empty();
+		//total.empty();
 		
 		start();
 	}
