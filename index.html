@@ -1,56 +1,76 @@
+
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!--default css sheets-->
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<!--css sheet-->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<!-- Bootstrap File -->
+<html>
+<head>
+	<title>Crystal collector</title>
+	
+	
+	<!-- Bootstrap File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-		<title>Crystal Collector</title>
-	</head>
-
+  <!--default css sheets-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!--css sheet-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--google font-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Permanent+Marker" rel="stylesheet">
+	
+<!-- JQuery -->
+ <script src="https://code.jquery.com/jquery.js"></script>
+</head>
 <body>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<div id="title">Crystal Collector</div>
-
-	<div id="secretnum"></div>
-
-	<div id="status"></div>
-
-	<div id="wins">Wins: </div>
-	<div id="lose">Lose: </div>
-	<div id="totalscore"></div>
-
-	<div id="items">
-		<button id="button-1" class="btn btn-primary number"><img src="assets/images/button1.png" id="but1"></button>
-		<button id="button-2" class="btn btn-primary number"><img src="assets/images/button2.png" id="but2"></button>
-        <button id="button-3" class="btn btn-primary number"><img src="assets/images/button3.png" id="but3"></button>
-        <button id="button-4" class="btn btn-primary number"><img src="assets/images/button4.png" id="but4"></button>
+<div class="container">
+	<div class="row" id="title">
+	<h1>Crystal Collector: Austin STYLE</h1>
+	</div>
+	<div class="row" id="intro">
+		<div class="col-md-6">
+		<h2>INSTRUCTION:</h2><br>
+		At the start of the game, a generated number. There four Austin resturant buttons below. All four buttons will value from 1-12. 
+		<br><br>
+		<p>Push any of the 4 buttons to tabulate a number. The goal is decide which buttons to click to get the same score as the generated number.</p>
+		<br>
+		<p>If the points matches the score, you get a win and play another round.</p>
+		<br>
+		<p>If the points are over the score, you get a losses point. The game continues to play another round.</p>
+		</div>
+	
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-6">
+				<div id="secret"><h2>SCORE:</h2></div>
+				</div>
+				<div class="col-md-6">
+				<div id="win"><h3>WINS:</h3></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div id="total"><h2>TOTAL:</h2></div>
+				</div>
+				<div class="col-md-6">
+					<div id="lose"><h3>LOSE:</h3></div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<script src="assets/javascript/test.js">
-for(var i=0; i<4; i++)
-{
-	var random= getRandItem();
-	var crystal = $("<div>");
-	crystal.attr("class": 'crystal', "rand-data":random);
-	$(".crystal").html("button");
-	$(".crystal").append(crystal);
-}
-
-$(".crystal").on("click", function()
-{
-	console.(S(this));
-
-});
+	<div class="row">
+		<div class="banner centered"></div>
+	</div>
 
 
+	<div class="row">
+	<div class="items centered"></div>
+	</div>
 
-	</script>
+</div>
+
+<div id="copyright">Vivian Tuong Nguyen &copy; 2017.</h4> All Rights Reserved.</div>
+</div>
+<script type="text/javascript" src="assets/javascript/game.js">
+		
+
+</script>
+
 </body>
 </html>

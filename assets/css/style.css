@@ -1,10 +1,95 @@
-
-#but1, #but2, #but3, #but4  
-{
-	height:100px;
-}
-
 .crystal
 {
-	background-color:blue;
+	border:1px solid black;
+	
+	height:225px;
+	width:225px;
+	margin: 10px;
+	box-shadow: 15px 15px 15px  rgba (0,0,0,0.5);
+}
+
+.items
+{
+
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	
+	
+}
+.container
+{
+	background-color: white;
+	margin-top:5%;
+	margin-bottom:20px;
+	border:1px solid black;
+ 
+	padding:20px;
+
+}
+.banner
+{
+	text-align: center;
+	color:#330107;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+}
+
+.crystal:hover, 
+{
+	
+	cursor: pointer;
+	opacity: .5;
+
+	
+}
+
+#title
+{
+	text-align: center;
+}
+
+#secret, #total
+{
+	padding:20px;
+}
+
+#win, #lose
+{
+
+	text-shadow: 2px 2px 4px #636363;
+	padding:20px;
+}
+
+h1
+{
+	color:black;
+	font-size: 30px;
+	font-family: 'Permanent Marker', cursive;
+}
+h2
+{
+	font-size: 18px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h3
+{
+	font-size: 14px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body
+{
+	font-color:grey;
+	font-size: 12px;
+	background-image:url("../images/bg.png")
+}
+#copyright
+{
+	padding:0px;
+	margin:auto;
+	text-align: center;
+	color:black;
 }
