@@ -30,7 +30,7 @@ function start()
 clear();
 
 //generating the random number 
-secret= Math.floor((Math.random()*99)+1);
+secret= Math.floor((Math.random()*102)+19);
 $("#secret").html("<h2>Points: </h2>"+secret);
 
 //creating 4 buttons with 4 random values
