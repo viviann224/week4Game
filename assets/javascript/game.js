@@ -37,10 +37,8 @@ $("#secret").html("<h2>Points: </h2>"+secret);
 for( var x=0; x<4; x++)
 {
 	var ranItem=Math.floor((Math.random()*12)+1);
-	console.log(ranItem);
 	var crystal= $("<div>");
 	crystal.attr({"class": 'crystal', "data":ranItem});
-
 	crystal.css({"background-image":"url('" +(image[x]) + "')","background-size:":"cover"
 
 	});
@@ -56,7 +54,6 @@ $(document).on('click', ".crystal", function()
 {
 
 	var num=parseInt($(this).attr('data'));
-	console.log(num);
 	total+=num;
 	$("#total").html("<h2>TOTAL: </h2>"+total);
 	//console.log("total: "+ total);
